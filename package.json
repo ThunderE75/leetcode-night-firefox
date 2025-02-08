@@ -15,7 +15,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/removeUnnecessaryAssets.js",
+    "build": "vite build && node scripts/removeUnnecessaryAssets.js && node scripts/firefoxCompatible.js",
     "lint": "tsc --noEmit && eslint . --ext .ts,.tsx,.js,.cjs,.jsx",
     "lint:fix": "eslint --fix . --ext .ts,.tsx,.js,.cjs,.jsx",
     "bump": "npm run lint && node ./scripts/bump.js",
